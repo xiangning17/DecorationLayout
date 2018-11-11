@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DecorationLayout">
+        <attr name="layout_decorAlign" format="enum">
+            <enum name="decor_align_start" value="-1"/>
+            <enum name="decor_align_end" value="-2"/>
+        </attr>
+    </declare-styleable>
+</resources>

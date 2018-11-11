@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ningxiang.decorationlayout.DecorationLayout
+        android:id="@+id/decor_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:hint="请输入电话号码"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/phone"
+            android:padding="8dp"
+            android:text="+86"
+            android:textAppearance="@android:style/Widget.Material.Light.Button.Borderless"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/phone"
+            android:padding="8dp"
+            android:text="获取验证码"
+            android:textAppearance="@android:style/Widget.Material.Light.Button.Borderless"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="16sp"
+            app:layout_decorAlign="decor_align_end" />
+
+        <ImageView
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:layout_decorAlign="decor_align_end"
+            app:srcCompat="@android:drawable/ic_notification_clear_all" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_toStartOf="@id/btn_clear"
+            android:layout_toEndOf="@id/region" />
+
+
+    </com.ningxiang.decorationlayout.DecorationLayout>
+
+</android.support.constraint.ConstraintLayout>

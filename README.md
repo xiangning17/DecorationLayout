@@ -1,3 +1,0 @@
-# DecorationLayout
-
-基于RelativeLayout的装饰布局，可在基准元素的左右装点一些元素，并设置基准元素的左右padding使其内容不被遮挡。
